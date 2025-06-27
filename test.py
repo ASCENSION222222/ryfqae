@@ -179,7 +179,7 @@ class MainWindow(QMainWindow):
             if self.current_stage in [0, 2, 4]:  # Pulse measurement stages
                 pulse, ok = QInputDialog.getInt(self, "Введіть пульс", 
                                               "Введіть кількість ударів за 15 секунд:",
-                                              min=0, max=50)
+                                              min=0, max=200)
                 if ok:
                     self.pulse_data.append(pulse)
             
